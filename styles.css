@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;700&family=Mali&display=swap');
+
+:root {
+    --midnight-green-eagle-green: #19535fff;
+    --pine-green: #0b7a75ff;
+    --dutch-white: #d7c9aaff;
+    --persian-plum: #7b2d26ff;
+    --cultured: #f0f3f5ff;
+}
+
+html {
+    background-color: var(--cultured);
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+article {
+    justify-content: center;
+}
+
+a:visited {
+   color: var(--pine-green)
+}
+
+progress {
+    width: 100%;
+    border-radius: 5px;
+    height: 5px;
+    background-color: var(--cultured);
+}
+
+h1, h2, h3 {
+    font-family: 'Kalam', cursive;
+    font-weight: 700;
+    color: var(--midnight-green-eagle-green);
+    margin-bottom: 0;
+}
+
+h1 {
+    color: var(--persian-plum);
+    font-size: 48pt;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 36pt;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+p, ul {
+    margin-top: 0;
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+aside, section {
+    font-family: 'Mali', cursive;
+    font-weight: 400;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="Content-Security-Policy"
+        content="
+		script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://www.googletagmanager.com;
+		style-src 'self' https://fonts.googleapis.com https://use.fontawesome.com; 
+		font-src 'self' https://fonts.gstatic.com https://use.fontawesome.com;
+		img-src 'self' https://www.google-analytics.com https://www.gravatar.com https://tryhackme-badges.s3.amazonaws.com https://stackexchange.com" />
+
+    <meta http-equiv="Feature-Policy" content="
+		autoplay: 'none';
+		camera: 'none';
+		display-capture: 'none';
+		geolocation: 'none';
+		microphone 'none';
+		geolocation 'none';
+		wake-lock: 'none';
+	" />
+
+    <meta name="robots" content="disallow">
+
+    <meta name="description" content="We're having a baby!">
+
+    <title>Poonam, Michael and Baby</title>
+
+    <link rel="icon" href="favicon.ico" type="image/png" />
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <article>
+        <h1>
+            Poonam and Michael are having a baby!
+        </h1>
+        <aside>
+            <progress min="0" max="100" value="" class="gestation"></progress>
+        </aside>
+
+        <section>
+            <h2>Details</h2>
+            <p>
+                On or about 9 May 2022 we are expecting a little bundle of joy - a boy or girl, we don't yet know - to change our lives forever.
+            </p>
+
+            <h2>Registries</h2>
+            <ul>
+                <li><strong>Amazon</strong>
+                    <br />
+                    <a href="https://www.amazon.ca/baby-reg/michael-sanford-poonam-mistry-may-2022-saint-lambert/3GTQ154L9JPQX">https://www.amazon.ca/baby-reg/michael-sanford-poonam-mistry-may-2022-saint-lambert/3GTQ154L9JPQX</a>
+                </li>
+                <li><strong>Chapters Indigo</strong>
+                    <br />
+                    <a href="https://www.chapters.indigo.ca/en-ca/list/find?id=3675939">https://www.chapters.indigo.ca/en-ca/list/find?id=3675939</a>
+                </li>
+            </ul>
+            
+            <h2>Gift Cards</h2>
+            <p>We're interested in gift cards specifically to the Lovevery play sets <a href="https://lovevery.com/products/gift-card">lovevery.com/products/gift-card</a></p>
+
+            <h2>Shower</h2>
+            <p>We're not sure about this one. We'll update here if we end up doing something.</p>
+        </section>
+    </article>
+</body>
+
+<script>
+    const now = new Date().getTime();
+    const expected = new Date("May 9, 2022 12:00:00").getTime();
+    const total = 2.365e+10;
+    const start = expected - total;
+
+    document.querySelector("progress").value = Math.floor((now - start)/total * 100);
+
+</script>
+
+</html>
