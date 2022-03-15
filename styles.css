@@ -12,11 +12,41 @@ html {
     background-color: var(--cultured);
 }
 
+@media (min-width: 768px) {
+	body {
+		font-size: 16px;
+	}
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1200px) {
+	body {
+		font-size: 20px;
+	}
+
+    h1 {
+        font-size: 48pt;
+    }
+
+    h2 {
+        font-size: 36pt;
+    }
+}
+
 body {
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: center;
-    margin: 0;
+    margin: 0 auto;
+    padding: 0;
+    border-collapse: collapse;
 }
 
 article {
@@ -29,12 +59,12 @@ a:visited {
 
 progress {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
     height: 5px;
     background-color: var(--cultured);
 }
 
-h1, h2, h3 {
+h1, h2 {
     font-family: 'Kalam', cursive;
     font-weight: 700;
     color: var(--midnight-green-eagle-green);
@@ -43,12 +73,7 @@ h1, h2, h3 {
 
 h1 {
     color: var(--persian-plum);
-    font-size: 48pt;
     justify-content: center;
-}
-
-h2 {
-    font-size: 36pt;
 }
 
 ul li {
